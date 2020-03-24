@@ -2,9 +2,10 @@
 const input = document.querySelector("#validation-input");
 
 input.addEventListener("change", e => {
+  input.cla
   if (e.target.value.length === 6) {
     input.classList.add("valid");
-    return;
   }
-  input.classList.add("invalid");
+  input.classList.toggle("invalid");
+  
 });
